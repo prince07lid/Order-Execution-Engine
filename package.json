@@ -1,0 +1,32 @@
+{
+  "name": "order-execution-engine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/websocket": "^11.2.0",
+    "bullmq": "^5.66.0",
+    "fastify": "^5.6.2",
+    "ioredis": "^5.8.2",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.0.1",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.6",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3",
+    "ws": "^8.18.3"
+  }
+}
